@@ -27,6 +27,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.header-bottom {
+  border: 1px solid #ececec;
+}
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -248,7 +251,18 @@ body {
 }
 
 /* Портфоліо */
+.portfolio-filter-list {
+  margin-top: 94px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+.portfolio-filter-list .portfolio-filter-iteam + .portfolio-filter-iteam {
+  margin-left: 8px;
+}
+
 .portfolio-button {
+  padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -266,14 +280,26 @@ body {
 }
 
 /* Кейси */
-.work-title {
+.portfolio-list {
+  margin-top: 0;
+  margin-bottom: 94px;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.portfolio-title {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-text-color);
 }
-.work-desc {
+.portfolio-desc {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.03em;

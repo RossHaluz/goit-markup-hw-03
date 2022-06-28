@@ -16,8 +16,9 @@ body {
   color: var(--second-text-color);
 }
 .container {
-  width: 1200px;
+  width: 1230px;
   margin: 0 auto;
+  padding: 0 15px;
   outline: 2px solid tomato;
 }
 
@@ -36,14 +37,33 @@ body {
   text-decoration: none;
   color: var(--hover-text-color);
 }
+.header-logo {
+  margin-right: 93px;
+}
 .logo-black {
   color: var(--main-text-color);
 }
+.main-nav {
+  display: flex;
+  align-items: center;
+}
 .main-links {
-  color: var(--main-text-color);
+  display: flex;
   margin-top: 0;
   margin-bottom: 0;
+
+  color: var(--main-text-color);
 }
+
+.main-links .iteam:not(:last-child) {
+  margin-right: 50px;
+}
+.main-links .iteam a {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .main-links .current {
   color: var(--hover-text-color);
 }
@@ -52,8 +72,13 @@ body {
   color: var(--hover-text-color);
 }
 .contacts-header {
+  display: flex;
+  margin-left: auto;
   margin-top: 0;
   margin-bottom: 0;
+}
+.contacts-header .contacts-item + .contacts-item {
+  margin-left: 50px;
 }
 .contacts-header a:hover,
 .contacts-header a:focus {
@@ -101,8 +126,13 @@ body {
   padding: 94px 0;
 }
 .advantages-list {
+  justify-content: center;
+  display: flex;
   margin-top: 0;
   margin-bottom: 0;
+}
+.advantages-list .advantages-iteam + .advantages-iteam {
+  margin-left: 30px;
 }
 .advantages-title {
   margin-top: 0;
@@ -134,8 +164,13 @@ body {
   color: var(--main-text-color);
 }
 .work-list {
+  justify-content: center;
+  display: flex;
   margin-top: 0;
   margin-bottom: 0;
+}
+.work-list .work-iteam + .work-iteam {
+  margin-left: 30px;
 }
 
 /* Наша команда */
@@ -155,7 +190,7 @@ body {
 }
 .team-desc {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 30px;
 
   font-size: 16px;
   line-height: 1.18;
@@ -166,14 +201,30 @@ body {
   margin-bottom: 30px;
 }
 .team-list {
+  display: flex;
+  justify-content: center;
   margin-top: 0;
   margin-bottom: 0;
+}
+.team-list .team-iteam + .team-iteam {
+  margin-left: 30px;
+}
+.team-iteam {
+  text-align: center;
+  background-color: var(--bg-main-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 /* Footer */
 .footer {
   background-color: var(--hero-bg-color);
   padding: 60px 0;
+}
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
 }
 .logo-white {
   color: var(--white-text-color);
@@ -188,6 +239,10 @@ body {
 .footer-address-list {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.footer-address-list .footer-address-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 /* Портфоліо */

@@ -40,6 +40,11 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.card-set {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
 /* Header */
 .header {
   font-weight: 500;
@@ -147,13 +152,6 @@ img {
 }
 
 /* Приемущества */
-
-.advantages-list {
-  justify-content: center;
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-}
 .advantages-iteam {
   flex-basis: calc((100% - 90px) / 4);
 }
@@ -185,12 +183,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
-.work-list {
-  justify-content: center;
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-}
 .work-iteam {
   flex-basis: calc((100% - 60px) / 3);
 }
@@ -216,12 +208,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
-.team-list {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
 .team-iteam {
   text-align: center;
   background-color: var(--bg-main-color);
@@ -231,7 +217,7 @@ img {
   flex-basis: calc((100% - 90px) / 4);
 }
 .taem-wrapper {
-  padding: 30px 60px;
+  padding: 30px;
 }
 
 /* Footer */
@@ -258,7 +244,7 @@ img {
   margin-bottom: 0;
 }
 
-.footer-address-list .footer-address-item:not(:last-child) {
+.footer-address-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -293,11 +279,6 @@ img {
 }
 
 /* Кейси */
-.portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
 .portfolio-iteam {
   flex-basis: calc((100% - 60px) / 3);
 }
